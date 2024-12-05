@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qubeditron - Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Qubeditron - Text Editor</h1>
+        <textarea id="textInput" placeholder="Start typing your text here..."></textarea>
+        <div>
+            <button onclick="getWordCount()">Get Word Count</button>
+            <button onclick="getCharCount()">Get Character Count</button>
+            <button onclick="getVowelCount()">Get Vowel Count</button>
+            <button onclick="getIntegerCount()">Get Integer Count</button>
+            <button onclick="getSpaceCount()">Get Space Count</button>
+            <button onclick="getSentenceCount()">Get Sentence Count</button>
+
+
+
+        </div>
+        <div id="wordCount">Word Count: 0</div>
+        <div id="charCount">Character Count: 0</div>
+        <div id="vowelCount">Vowel Count: 0</div>
+        <div id="integerCount">Integer Count: 0</div>
+        <div id="spaceCount">Space Count: 0</div>
+        <div id="sentenceCount">Sentence Count: 0</div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
