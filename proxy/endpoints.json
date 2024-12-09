@@ -1,0 +1,26 @@
+{
+    "wordcount": {
+      "url": "http://cloud_final-web-1/api/wordcount.php",
+      "method": "GET"
+    },
+    "charcount": {
+      "url": "http://cloud_final-web-1/api/charcount.php",
+      "method": "GET"
+    },
+    "vowelcount": {
+      "url": "http://cloud_final-web-1/api/vowelcount.php",
+      "method": "POST"
+    },
+    "integercount": {
+      "url": "http://cloud_final-web-1/api/integercount.php",
+      "method": "POST"
+    },
+    "spacecount": {
+      "url": "http://cloud_final-web-1/api/spacecount.php",
+      "method": "POST"
+    },
+    "sentencecount": {
+      "url": "http://cloud_final-web-1/api/sentencecount.php",
+      "method": "POST"
+    }
+  }

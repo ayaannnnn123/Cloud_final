@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - app-network
+
+  proxy:
+    build: ./proxy
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./proxy:/app
+    networks:
+      - app-network
+
+  monitoring:
+    build: ./monitoring
+    depends_on:
+      - proxy
+      - web
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
